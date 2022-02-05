@@ -654,14 +654,14 @@ k = des(b"stuvwxyz")
 # i)
 # The first string of pti is the reference plaintext others have a HD of one w.r.t to this reference plaintext
 pti=[b'abcdefgh',b'`bcdefgh',b'cbcdefgh',b'ebcdefgh',b'ibcdefgh',b'qbcdefgh']
-get_plot(get_lis(k,pti,b"stuvwxyz"),"5 different plaintexts with each having a \n hamming distance of one w.r.t thr base plaintext",0,1)
+get_plot(get_lis(k,pti,b"stuvwxyz"),"5 different plaintexts with each having a \n hamming distance of one w.r.t the base plaintext",0,1)
 
 # ii)
 # The first string of pti is the reference plaintext others have 
 # HDs of one, two, three, four, five respectively w.r.t to this reference plaintext
 ptii=[b'abcdefgh',b'cbcdefgh',b'bbcdefgh',b'obcdefgh',b'nbcdefgh',b'~bcdefgh']
 get_plot(get_lis(k,ptii,b"stuvwxyz"), \
-         "5 different plaintexts with each having a hamming distance \n increasing from one to five w.r.t thr base plaintext",1,1)
+         "5 different plaintexts with each having a hamming distance \n increasing from one to five w.r.t the base plaintext",1,1)
 
 # iii)
 # The first string of k_list is the reference key others have a HD of one w.r.t to this reference key
