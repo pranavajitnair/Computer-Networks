@@ -1,5 +1,5 @@
 import sys
-
+# DES implementation taken from https://gist.github.com/eigenein/1275094#file-pydes-py-L61
 # _pythonMajorVersion is used to handle Python2 and Python3 differences.
 _pythonMajorVersion = sys.version_info[0]
 
@@ -589,7 +589,7 @@ class des(_baseDes):
 		return self._unpadData(data, pad, padmode)
     
     
-# different plaintexts for avalanche effect
+# different plaintexts and different keys for avalanche effect
 import matplotlib.pyplot as plot
         
 def hamming_dis(fi,se):                 # calculate hamming siatance between two  strings
