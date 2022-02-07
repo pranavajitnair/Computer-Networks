@@ -668,8 +668,8 @@ get_plot(get_lis(k,ptii,b"stuvwxyz"), \
 
 # iii)
 # The first string of k_list is the reference key others have a HD of one w.r.t to this reference key
-k_list=[des(b'abcdefgh'),des(b'`bcdefgh'),des(b'cbcdefgh'),des(b'ebcdefgh'),des(b'ibcdefgh'),des(b'qbcdefgh')]
-k_list1=[b'abcdefgh',b'`bcdefgh',b'cbcdefgh',b'ebcdefgh',b'ibcdefgh',b'qbcdefgh']
+k_list=[des(b'abcdefgh'),des(b'a`cdefgh'),des(b'cbcdefgh'),des(b'ebcdefgh'),des(b'ibcdefgh'),des(b'qbcdefgh')]
+k_list1=[b'abcdefgh',b'a`cdefgh',b'cbcdefgh',b'ebcdefgh',b'ibcdefgh',b'qbcdefgh']
 plaintext=b"stuvwxyz"
 
 lis=[]
