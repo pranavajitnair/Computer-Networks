@@ -591,8 +591,9 @@ class des(_baseDes):
     
 # different plaintexts and different keys for avalanche effect
 import matplotlib.pyplot as plot
+import statistics
         
-def hamming_dis(fi,se):                 # calculate hamming siatance between two  strings
+def hamming_dis(fi,se):                 # calculate hamming distance between two  strings
         dis=0
         for i in range(len(fi)):
             if fi[i]!=se[i]: dis+=1
@@ -638,9 +639,11 @@ def get_plot(lis,name,increment,initial):
         print('Round '+str(s),kk,sep=' ')
         
     plot_lis=tuple(plot_lis)
+    medians=[statistics.median(test_list) for test_list in plot_lis]
     
     fig = plot.figure()                           # plot the box whisker plot
     plot.boxplot(plot_lis,positions=[l for l in range(0,17)])
+    plot.plot([l for l in range(0,17)],medians)
     fig.suptitle(name)
     plot.xlabel('Rounds')
     plot.ylabel('HD')
